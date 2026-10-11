@@ -8,6 +8,14 @@
   <img src="https://img.shields.io/badge/PDK-GPDK90-2874A6?style=flat-square&labelColor=555555" alt="GPDK90">
 </p>
 
+## Designed & Implemented By
+
+**Bonoshree Talukder Tondra**  
+Department of Electronics and Telecommunication Engineering (ETE)  
+Chittagong University of Engineering & Technology (CUET)
+
+**GitHub:** [github.com/Bonoshree](https://github.com/Bonoshree)
+
 ## Introduction
 
 This repository documents the design and physical implementation of basic CMOS digital logic circuits using **Cadence Virtuoso** with the **GPDK 90nm technology library**.
@@ -26,7 +34,6 @@ Each circuit is presented through its operating principle, schematic representat
 | Circuit Category | Combinational Digital Logic |
 <!--| Physical Design | Custom IC Layout |-->
 
----
 
 ## Circuit Library
 
@@ -54,7 +61,6 @@ The design process consists of the following stages:
 4. **Physical Layout:** Implement transistor placement and electrical interconnections.
 5. **Functional Evaluation:** Examine circuit behavior through available simulation waveforms.
 
----
 
 # CMOS Logic Gate Implementations
 
@@ -99,7 +105,6 @@ The symbol provides a simplified representation of the inverter for use in other
 The expected output waveform is the logical complement of the applied input signal.
 
 ![CMOS Inverter Simulation](cmos%20design%20images/inv%20graph.png)
----
 
 ## 02. Two-Input CMOS NAND Gate
 
@@ -148,7 +153,6 @@ The expected waveform shows a LOW output only when both input signals are HIGH.
 
 ![NAND Gate Simulation](cmos%20design%20images/nand%20graph.png)
 
----
 
 ## 03. Two-Input CMOS AND Gate
 
@@ -194,7 +198,6 @@ The expected output becomes HIGH only during intervals when both inputs are HIGH
 
 ![AND Gate Simulation](cmos%20design%20images/and%20graph.png)
 
----
 
 ## 04. Two-Input CMOS NOR Gate
 
@@ -242,7 +245,6 @@ The expected output is HIGH only when neither input is asserted.
 
 ![NOR Gate Simulation](cmos%20design%20images/nor%20graph.png)
 
----
 
 ## 05. Two-Input CMOS OR Gate
 
@@ -254,11 +256,11 @@ A common static CMOS realization combines a NOR gate with an inverter. The NOR s
 
 **Boolean Expression:**
 
-`Y = A + B`
+`out = A + B`
 
 ### Logic Verification Table
 
-| A | B | Y |
+| A | B | out |
 |:---:|:---:|:---:|
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
@@ -269,27 +271,26 @@ A common static CMOS realization combines a NOR gate with an inverter. The NOR s
 
 The schematic illustrates the CMOS implementation of the OR logic function.
 
-![OR Gate Schematic](images/or2/schematic.png)
+![OR Gate Schematic](cmos%20design%20images/or%20schematic.png)
 
-### Physical Layout
+<!--### Physical Layout
 
 The layout displays the physical structure and routing of the OR gate circuit.
 
-![OR Gate Layout](images/or2/layout.png)
+![OR Gate Layout](images/or2/layout.png)-->
 
 ### Circuit Symbol
 
 The symbol represents the standard two-input OR gate.
 
-![OR Gate Symbol](images/or2/symbol.png)
+![OR Gate Symbol](cmos%20design%20images/or%20symbol.png)
 
-### Transient Response
+### Simulation and Verification
 
 The expected output remains LOW only when both input signals are LOW.
 
-![OR Gate Simulation](images/or2/simulation.png)
+![OR Gate Simulation](cmos%20design%20images/or%20graph.png)
 
----
 
 # Well and Substrate Connections
 
@@ -311,9 +312,8 @@ Maintaining the correct well potential helps prevent unintended body biasing and
 
 The image below presents the implemented M1_NWELL connection structure.
 
-![M1_NWELL Layout](images/m1_nwell/layout.png)
+![M1_NWELL Layout](cmos%20design%20images/m1%20nwell.png)
 
----
 
 ## 07. MQ_PSUB
 
@@ -329,9 +329,8 @@ Proper substrate biasing is important for stable transistor operation and reduci
 
 The following layout illustrates the substrate connection structure.
 
-![MQ_PSUB Layout](images/mq_psub/layout.png)
+![M1_PSUB Layout](cmos%20design%20images/m1%20psub.png)
 
----
 
 # Project Summary
 
@@ -341,24 +340,10 @@ The collection covers five basic combinational logic gates and two supporting we
 
 The repository also serves as a foundation for further exploration of more advanced digital VLSI circuits.
 
----
 
-## Tools Used
+<!--## Tools Used
 
 - Cadence Virtuoso
 - GPDK 90nm Technology Library
-- CMOS Digital Circuit Design
+- CMOS Digital Circuit Design-->
 
-## Author
-
-**[Your Name]**
-
-Department of Electronics and Telecommunication Engineering (ETE)
-
-Chittagong University of Engineering & Technology (CUET)
-
-GitHub: [Your GitHub Profile](https://github.com/your-username)
-
----
-
-*CMOS VLSI Design | Schematic Development | Custom IC Layout*
