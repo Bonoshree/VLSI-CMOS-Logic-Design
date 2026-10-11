@@ -72,7 +72,7 @@ It consists of one PMOS and one NMOS transistor operating in a complementary man
 
 ### Logic Verification Table
 
-| Input A | Output Y |
+| Input A | Output |
 |:---:|:---:|
 | 0 | 1 |
 | 1 | 0 |
@@ -81,26 +81,24 @@ It consists of one PMOS and one NMOS transistor operating in a complementary man
 
 The schematic illustrates the complementary arrangement of the PMOS and NMOS transistors.
 
-![CMOS Inverter Schematic](cmos design images/inverter schematic.png)
+![CMOS Inverter Schematic](cmos%20design%20images/inverter%20schematic.png)
 
 ### Physical Layout
 
 The layout represents the transistor placement and interconnections required to implement the inverter.
 
-![CMOS Inverter Layout](images/inverter/layout.png)
+![CMOS Inverter Layout](cmos%20design%20images/inv%20layout.png)
 
 ### Circuit Symbol
 
 The symbol provides a simplified representation of the inverter for use in other digital circuits.
 
-![CMOS Inverter Symbol](images/inverter/symbol.png)
-
-### Transient Response
+![CMOS Inverter Symbol](cmos%20design%20images/inv%20symbol.png)
+### Simulation and Verification
 
 The expected output waveform is the logical complement of the applied input signal.
 
-![CMOS Inverter Simulation](images/inverter/simulation.png)
-
+![CMOS Inverter Simulation](cmos%20design%20images/inv%20graph.png)
 ---
 
 ## 02. Two-Input CMOS NAND Gate
@@ -115,11 +113,11 @@ This arrangement allows the output to be pulled LOW only when both NMOS transist
 
 **Boolean Expression:**
 
-`Y = (A · B)'`
+`out = (A · B)'`
 
 ### Logic Verification Table
 
-| A | B | Y |
+| A | B | out |
 |:---:|:---:|:---:|
 | 0 | 0 | 1 |
 | 0 | 1 | 1 |
@@ -130,25 +128,25 @@ This arrangement allows the output to be pulled LOW only when both NMOS transist
 
 The transistor-level circuit demonstrates the parallel pull-up and series pull-down configurations.
 
-![NAND Gate Schematic](images/nand2/schematic.png)
+![NAND Gate Schematic](cmos%20design%20images/nand%20schematic.png)
 
 ### Physical Layout
 
 The physical design incorporates the MOS transistors and routing connections required for NAND functionality.
 
-![NAND Gate Layout](images/nand2/layout.png)
+![NAND Gate Layout](cmos%20design%20images/nand%20layout.png)
 
 ### Circuit Symbol
 
 The NAND symbol contains two input terminals and one inverted output terminal.
 
-![NAND Gate Symbol](images/nand2/symbol.png)
+![NAND Gate Symbol](cmos%20design%20images/nand%20symbol.png)
 
-### Transient Response
+### Simulation and Verification
 
 The expected waveform shows a LOW output only when both input signals are HIGH.
 
-![NAND Gate Simulation](images/nand2/simulation.png)
+![NAND Gate Simulation](cmos%20design%20images/nand%20graph.png)
 
 ---
 
@@ -162,11 +160,11 @@ In a CMOS implementation, the AND function can be obtained by combining a NAND s
 
 **Boolean Expression:**
 
-`Y = A · B`
+`out = A · B`
 
 ### Logic Verification Table
 
-| A | B | Y |
+| A | B | out |
 |:---:|:---:|:---:|
 | 0 | 0 | 0 |
 | 0 | 1 | 0 |
@@ -177,25 +175,24 @@ In a CMOS implementation, the AND function can be obtained by combining a NAND s
 
 The schematic presents the CMOS circuitry used to realize the two-input AND operation.
 
-![AND Gate Schematic](images/and2/schematic.png)
+![AND Gate Schematic](cmos%20design%20images/and%20schematic.png)
 
 ### Physical Layout
 
 The layout illustrates the physical arrangement of the devices and their electrical connections.
 
-![AND Gate Layout](images/and2/layout.png)
+![AND Gate Layout](cmos%20design%20images/and%20layout.png)
 
 ### Circuit Symbol
 
 The AND gate symbol represents the two-input combinational logic function.
 
-![AND Gate Symbol](images/and2/symbol.png)
+![AND Gate Symbol](cmos%20design%20images/and%20symbol.png)
 
-### Transient Response
-
+### Simulation and Verification
 The expected output becomes HIGH only during intervals when both inputs are HIGH.
 
-![AND Gate Simulation](images/and2/simulation.png)
+![AND Gate Simulation](cmos%20design%20images/and%20graph.png)
 
 ---
 
@@ -211,11 +208,11 @@ This configuration ensures that any HIGH input can activate a discharge path tow
 
 **Boolean Expression:**
 
-`Y = (A + B)'`
+`out = (A + B)'`
 
 ### Logic Verification Table
 
-| A | B | Y |
+| A | B | out |
 |:---:|:---:|:---:|
 | 0 | 0 | 1 |
 | 0 | 1 | 0 |
@@ -226,25 +223,24 @@ This configuration ensures that any HIGH input can activate a discharge path tow
 
 The schematic demonstrates the series PMOS and parallel NMOS transistor networks.
 
-![NOR Gate Schematic](images/nor2/schematic.png)
-
-### Physical Layout
+![NOR Gate Schematic](cmos%20design%20images/nor%20schematic.png)
+<!--### Physical Layout
 
 The layout shows the transistor arrangement and signal routing for the NOR circuit.
 
-![NOR Gate Layout](images/nor2/layout.png)
+![NOR Gate Layout](cmos%20design%20images/nor%20layout.png)-->
 
 ### Circuit Symbol
 
 The NOR symbol represents an OR function with an inverted output.
 
-![NOR Gate Symbol](images/nor2/symbol.png)
+![NOR Gate Symbol](cmos%20design%20images/nor%20symbol.png)
 
-### Transient Response
+###  Simulation and Verification
 
 The expected output is HIGH only when neither input is asserted.
 
-![NOR Gate Simulation](images/nor2/simulation.png)
+![NOR Gate Simulation](cmos%20design%20images/nor%20graph.png)
 
 ---
 
